@@ -1,34 +1,18 @@
 import './App.css'
+import MovieCard from './components/MovieCard'
+import Home from './pages/Home';
 
 function App() {
+  const movieNumber = 2;
 
   return (
     <>
-      <div>
-       <p>hello</p>
-       <Excuse/>
-       <Reasoning/>
-      </div>
+      {movieNumber === 1 ? (<MovieCard movie = {{title: "Max's film", url: "https//:movie", release_date:"09/09/25"}}></MovieCard>) : 
+      (<MovieCard movie = {{title: "Bella's film", url: "https//:movie", release_date:"09/09/25"}}></MovieCard>)}
+      <Home></Home>
+
     </>
   )
 }
-
-function Excuse(){
-  return (
-    <>
-    <p>I will work on this later</p>
-    </>
-  )
-}
-
-function Reasoning(){
-  return(
-    <>
-    <p>I have to leave work and make dinner</p>
-    </>
-  )
-}
-
-
 
 export default App
