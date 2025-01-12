@@ -13,6 +13,8 @@ function NavBar(){
             </div>
             <div className="navbar-links"><Link to = "/favorites" className="nav-link">Favorites</Link>
             </div>
+            <div className="navbar-links"><Link to = "/logIn" className="nav-link">Log Out</Link>
+            </div>
         </nav>
         </>
     )
